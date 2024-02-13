@@ -1,11 +1,14 @@
 import os
 import shutil
 
+
+
 def main():
     # list to keep all image extensions
     image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp"]
     
     # navigate to downloads folder 
+    #dloads_folder = input("Please enter Downloads-Folder Path (example format: 'D:\Downloads'): ")
     os.chdir("D:\Downloads")
    
     # list files in folder and save in list
@@ -19,7 +22,8 @@ def main():
             image_files_to_move.append(file)
     
     # new folder to move files to
-    destination_folder = r"D:\Bilder\everything"
+    #new_folder = input("Please enter desired Path for Image files (example format: 'D:\Bilder\everything'): ")
+    destination_folder = "D:\Bilder\everything"
     
     # Move files to the new folder 
     for file in image_files_to_move:
@@ -40,7 +44,7 @@ def main():
             print(f"Moved '{file}' to '{destination_folder}'")
     
     print("Image files have been moved successfully")
-    input("Press enter to exit;")
+    input("Press enter to exit ")
         
     
 if __name__ == "__main__":
