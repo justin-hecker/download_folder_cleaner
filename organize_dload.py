@@ -40,6 +40,7 @@ def main():
             print(f"Moved '{file}' to '{destination_folder}'")
     
     print("Image files have been moved successfully")
+    input("Press enter to exit;")
         
     
 if __name__ == "__main__":
