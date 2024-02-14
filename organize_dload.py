@@ -1,8 +1,6 @@
 import os
 import shutil
 
-
-
 def main():
     # list to keep all image extensions
     image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp"]
@@ -45,7 +43,7 @@ def main():
     
     print("Image files have been moved successfully")
     input("Press enter to exit ")
-        
-    
+
+
 if __name__ == "__main__":
     main()
