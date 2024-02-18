@@ -40,7 +40,8 @@ def main():
         else:
             shutil.move(source_path, destination_path)
             print(f"Moved '{file}' to '{destination_folder}'")
-    
+
+    # give confirmation that files have been used and wait for user input to close script (makes it look less fishy and weird)
     print("Image files have been moved successfully")
     input("Press enter to exit ")
 
