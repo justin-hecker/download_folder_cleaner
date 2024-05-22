@@ -19,11 +19,8 @@ def main():
         filename, extension = os.path.splitext(file)
         if extension.lower() in image_extensions:
             image_files_to_move.append(file)
-    
-    for file in all_files:
-        finlename, extension = os.path.splitext(file)
-        if extension.lower() == ".pdf":
-            pdf_files_to_move.append(file)  
+        elif extension.lower() == ".pdf":
+            pdf_files_to_move.append(file) 
     
     # new folder to move files to
     #new_folder = input("Please enter desired Path for Image files (example format: 'D:\Bilder\everything'): ")
