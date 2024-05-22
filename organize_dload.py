@@ -4,6 +4,8 @@ import shutil
 def main():
     # list to keep all image extensions
     image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp"]
+    setup_extensions = [".exe", ".msi"]
+    zip_extensions = [".rar", ".zip"]
     
     # navigate to downloads folder 
     #dloads_folder = input("Please enter Downloads-Folder Path (example format: 'D:\Downloads'): ")
@@ -14,13 +16,17 @@ def main():
     image_files_to_move = []
     pdf_files_to_move = []
     
-    # iterate over all files in directory and identify image files as specified in extensions above and save those in a list
+    # iterate over all files in directory and identify files as specified in extensions above and save those in a list or delete them
     for file in all_files:
         filename, extension = os.path.splitext(file)
         if extension.lower() in image_extensions:
             image_files_to_move.append(file)
         elif extension.lower() == ".pdf":
             pdf_files_to_move.append(file) 
+        elif extension.lower() in setup_extensions:
+            os.remove(file)
+        elif extension.lower() in zip_extensions:
+            os.remove(file)
     
     # new folder to move files to
     #new_folder = input("Please enter desired Path for Image files (example format: 'D:\Bilder\everything'): ")
