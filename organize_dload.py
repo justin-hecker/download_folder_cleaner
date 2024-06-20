@@ -5,7 +5,7 @@ def main():
     # list to keep all image extensions
     image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".gif"]
     setup_extensions = [".exe", ".msi"]
-    zip_extensions = [".rar", ".zip"]
+    zip_extensions = [".rar", ".zip", ".7z"]
     media_extensions = [".mp4",".mp3", ".wav", ".flv", ".avi", ".wmv", ".webm", ".mkv"]
     
     # navigate to downloads folder 
