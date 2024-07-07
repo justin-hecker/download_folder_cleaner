@@ -2,7 +2,7 @@ import os
 import shutil
 
 def main():
-    # list to keep all image extensions
+    # lists of all media extensions for the script to filter them
     image_extensions = [".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp", ".gif"]
     setup_extensions = [".exe", ".msi"]
     zip_extensions = [".rar", ".zip", ".7z"]
